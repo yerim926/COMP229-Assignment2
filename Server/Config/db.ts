@@ -1,2 +1,2 @@
-export const LocalURI = "mongodb://localhost/clothing_store";
+export const LocalURI = "mongodb://localhost/business_contacts";
 export const HostName = "localhost";
