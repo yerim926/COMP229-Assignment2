@@ -18,3 +18,24 @@ export function DisplayBusinessListPage(req: Request, res: Response, next: NextF
         res.render('index', {title: 'Business Contact List', page: 'business-list', business: businessCollection})
     });
 }
+
+export function DisplayEditPage(req: Request, res: Response, next: NextFunction):void
+{
+    let id = req.params.id;
+
+    console.log(id);
+
+    // pass the id to the db 
+
+    //db.business.find({"_id": id})
+    Business.findById(id,{},{},(err, businessContactToEdit) =>
+    {
+        if(err)
+        {
+            console.error(err);
+            res.end(err);
+        }
+        //show the edit view
+        res.render('index',{title: 'Edit', page: 'edit', business: businessContactToEdit})
+    });
+}

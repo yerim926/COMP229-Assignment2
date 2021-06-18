@@ -8,4 +8,5 @@ const router = express_1.default.Router();
 exports.default = router;
 const business_1 = require("../Controllers/business");
 router.get('/', business_1.DisplayBusinessListPage);
+router.get('/edit/:id', business_1.DisplayEditPage);
 //# sourceMappingURL=business.js.map
