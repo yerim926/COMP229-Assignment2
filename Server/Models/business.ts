@@ -4,9 +4,9 @@ import mongoose from 'mongoose';
 const Schema = mongoose.Schema; //alias for Schema
 const BusinessSchema = new Schema
 ({
-    Name: String,
-    Phone: String,
-    Email: String
+    name: String,
+    phone: String,
+    email: String
 },
 {
     collection: "business"

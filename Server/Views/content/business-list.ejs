@@ -1,0 +1,40 @@
+<main class="container">
+     <div class="p-5 mb-4 bg-light rounded-3" >
+      <div class="container-fluid py-5">
+        <h1>Business Contacts List</h1>
+
+        <div class="row">
+            <div class="col">
+                
+                <!--Table-->
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Phone Number</th>
+                        <th scope="col">Contact Email</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+
+                        <!-- Repeatable Row Template -->
+                        <% for (let count = 0; count < business.length; count++) { %>
+
+                    <tr>
+                        <th scope="row"><%= count + 1 %></th>
+                        <td><%= business[count].name %></td>
+                        <td><%=business[count].phone %></td>
+                        <td><%=business[count].email %></td>
+                    </tr>
+
+                    <% } %>
+                    
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+</div>
+</main>        
