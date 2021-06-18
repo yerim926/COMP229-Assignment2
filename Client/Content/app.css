@@ -1,0 +1,87 @@
+/* your custom css goes here */
+
+/*
+    File Name : app.css
+    Student's Name : Yerim Cho
+    Student ID : 301143325
+    Date : June 4th, 2021
+
+*/
+
+
+/* Custom css goes here */
+
+/*import fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+
+/*main contents*/
+#mainDiv {
+    text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+/*divide sections*/
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+.column {
+    float:left;
+    width:50%;
+    padding:10px;
+}
+
+/*home*/
+#paragraph1 {
+    font-size:large;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#mission {
+    font-family: 'Roboto Slab', serif;
+}
+
+#missionP{
+    font-size:large;
+}
+
+/*proects*/
+.projectRow:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.projectRow{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    width: 90%;
+  }
+
+#head{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/*contact*/
+
+.contactMain{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.mb-3{
+    text-align: center;
+}
+
+
+
+
+
